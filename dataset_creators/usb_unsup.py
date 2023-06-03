@@ -116,8 +116,8 @@ for (split_name, split_examples) in zip(["train", "validation", "test"],
                     "summ_idx": summ_idx,
                     "id": assignment_id,
                     "input_lines": input_sents,
-                    "before_lines": [before_sent],
-                    "after_lines": [after_sent]
+                    "summary": before_sent,
+                    "annotated_summary": after_sent
                 })
             elif before_sent!=after_sent:
                 diff_obj = showdiff(before_sent, after_sent)
