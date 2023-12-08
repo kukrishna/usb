@@ -37,17 +37,24 @@ files which we have included in the `checksums.txt` file.
 
 ---
 
-More details can be found in the paper: [https://arxiv.org/abs/2305.14296](https://arxiv.org/abs/2305.14296)
+More details can be found in the paper:  [https://aclanthology.org/2023.findings-emnlp.592/](https://aclanthology.org/2023.findings-emnlp.592/)
+
 
 If you use this dataset, please cite it as below:
 ```
-@misc{krishna2023usb,
-      title={USB: A Unified Summarization Benchmark Across Tasks and Domains}, 
-      author={Kundan Krishna, Prakhar Gupta, Sanjana Ramprasad, Byron C. Wallace, Jeffrey P. Bigham, Zachary C. Lipton},
-      year={2023},
-      eprint={2305.14296},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+
+@inproceedings{krishna-etal-2023-usb,
+    title = "{USB}: A Unified Summarization Benchmark Across Tasks and Domains",
+    author = "Krishna, Kundan  and
+      Gupta, Prakhar  and
+      Ramprasad, Sanjana  and
+      Wallace, Byron  and
+      Bigham, Jeffrey  and
+      Lipton, Zachary",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    year = "2023",
+    pages = "8826--8845"
 }
+
 ```
 
