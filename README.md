@@ -2,7 +2,7 @@
 
 This repository contains the dataset and code for creating the [USB Benchmark](https://arxiv.org/abs/2305.14296). ( Update: The benchmark datasets are now also available on Huggingface at this [link](https://huggingface.co/datasets/kundank/usb)! )
 
-This repository also provides scripts to run and evaluate some models on the benchmark. The models include ChatGPT (via few-shot prompting), and Flan-T5-XL (finetuned on the training set of the benchmark).
+This repository also provides scripts to run and evaluate some models on the benchmark. The models include ChatGPT (via few-shot prompting), and Flan-T5-XL (finetuned on the training set of the benchmark, available at the links listed [here](https://huggingface.co/datasets/kundank/usb)).
 
 
 Below we provide step-by-step instructions to create the benchmark datasets and run evaluation of the two models:
