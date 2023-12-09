@@ -44,6 +44,7 @@ When you run a pipeline script, it :
 
 ```shell
 cd experiments
+
 # to run chatgpt pipeline
 bash run_pipeline_chatgpt.sh
 
