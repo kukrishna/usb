@@ -12,7 +12,7 @@ evidence_extraction
 
 
 python chatgpt/convert_datasets_for_fewshot.py \
-    --dataset-folder-root ../task_datasets/release/all/ \
+    --dataset-folder-root ../task_datasets/all/ \
     --output-folder-root ./chatgpt/converted_data/all \
 #    --dummyrun # this flag makes small datasets so that the script can be tested end-to-end quickly
 
