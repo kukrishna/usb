@@ -218,8 +218,6 @@ def calc_main(prediction_glob):
         if task_name in ["multisentence_compression", "fixing_factuality", "topicbased_summarization", "abstractive_summarization"]:
             for (this_task, pred) in zip(tasks, pred_dps):
                 if this_task==task_name:
-                    if "prediction" not in pred:
-                        continue
                     evaluation_dps.append({"prediction": pred["prediction"], "ground_truth": pred["output_string"]})
 
             rouge_metrics=evaluate_rouge_using_huggingface(evaluation_dps)
@@ -228,8 +226,6 @@ def calc_main(prediction_glob):
         if task_name in ["unsupported_span_prediction"]:
             for (this_task, pred) in zip(tasks, pred_dps):
                 if this_task==task_name:
-                    if "prediction" not in pred:
-                        continue
                     if "[]" in pred["prediction"]:
                         evaluation_dps.append({"base_string": pred["summary"], "prediction": pred["prediction"], "ground_truth": pred["annotated_summary"]})
                     else:
@@ -243,8 +239,6 @@ def calc_main(prediction_glob):
             all_labels = []
             all_probs = []
             for (this_task, pred) in zip(tasks, pred_dps):
-                if "prediction" not in pred:
-                    continue
                 if this_task==task_name:
                     if task_name=="factuality_classification":
                         all_labels.append(pred["label"])
