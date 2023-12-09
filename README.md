@@ -35,6 +35,23 @@ bash create_all_datasets.sh
 To ensure that the labeled datasets were created properly, you can match the checksums for the generated
 files which we have included in the `checksums.txt` file.
 
+### Step6
+We provide pipelines to evaluate models such as ChatGPT or FlanT5 on all tasks.
+When you run a pipeline script, it :
+(1) converts examples from the task datasets into seq2seq format with task instructions and optional fewshot examples in the input
+(2) runs inference using the corresponding model
+(3) runs the evaluation script to produce metrics for the model outputs for each task
+
+```shell
+cd experiments
+# to run chatgpt pipeline
+bash run_pipeline_chatgpt.sh
+
+# to run finetuned flant5-xl pipeline
+bash run_pipeline_flant5.sh
+```
+
+
 ---
 
 More details can be found in the paper:  [https://aclanthology.org/2023.findings-emnlp.592/](https://aclanthology.org/2023.findings-emnlp.592/)
