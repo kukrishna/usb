@@ -14,7 +14,7 @@ import json
 ALL_PROMPT_STRS = {
 "multisentence_compression": "Summarize the following content in a single line.",
 "abstractive_summarization": "Draft a summary for the given document.",
-"fixing_factuality": "The summary might be incorrect. How would you rewrite it to make it factually accurate?",
+"fixing_factuality": "The summary might be incorrect. How would you rewrite it to make it factually accurate? Make as little changes as possible. Do not add any new information to the summary.",
 "unsupported_span_prediction": "Go over the given summary carefully, and regenerate it while surrounding any parts which are not supported by the content using [] and [/] tags.",
 "topicbased_summarization": "Create a short summary of the given content that touches upon information which fall under the specified topic.",
 "factuality_classification": "Decide if the following summary is consistent with the corresponding content. Note that consistency means all information in the summary is supported by the content. Answer yes or no.",
